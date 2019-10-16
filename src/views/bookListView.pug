@@ -48,7 +48,7 @@ header.navbar.navbar-bright.fixed-top.navbar-expand-md(role='banner')
       .panel
         .card-body
           // /stories
-          each book in books
+          each book, index in books
             .row
               br
               .col-lg-2.col-md-3.text-center
@@ -62,7 +62,7 @@ header.navbar.navbar-bright.fixed-top.navbar-expand-md(role='banner')
                       span.badge.badge-dark= book.author
                     h4
                       small.text-muted(style='font-family:courier,\'new courier\';') 2 hours ago • 
-                        a.text-muted(href='/books/' + book.id) Read More
+                        a.text-muted(href='/books/' + book._id) Read More
                   .col-3
                 br
                 br
