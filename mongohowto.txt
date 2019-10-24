@@ -1,0 +1,19 @@
+1. Start Mongo container
+docker start mongoball
+
+2. Connect to Mongo container bash shell
+docker exec -it mongoball bash
+
+3. Run command line interface to mongodb
+mongo
+
+4. Show databases
+show dbs
+
+5. Select one database
+use libraryApp
+
+6. list users
+db.users.find()
+
+

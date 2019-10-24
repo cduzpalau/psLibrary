@@ -5,7 +5,7 @@ meta(name='generator' content='Bootply')
 meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1')
 link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
 link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css' rel='stylesheet')
-link(href='css/styles.css' rel='stylesheet')
+link(href='/css/styles.css' rel='stylesheet')
 header.navbar.navbar-bright.fixed-top.navbar-expand-md(role='banner')
   .container
     .navbar-header
@@ -50,14 +50,13 @@ header.navbar.navbar-bright.fixed-top.navbar-expand-md(role='banner')
           // /stories
           .row
             br
-            .col-lg-2.col-md-3.text-center Sign Up! or 
-              a(href='/auth/signin') Sign In!
-              form(name="signUpform" method="POST" action="/auth/signup")
+            .col-lg-2.col-md-3.text-center Sign In!
+              form(name="signInform" method="POST" action="/auth/signin")
                 label(for="username") Email address
                 input(name="username" id="username")
                 label(for="password") Password
                 input(name="password" id="password")
-                input(type="submit" value="Sign up")
+                input(type="submit" value="Sign in")
           hr
           // /stories
           a.btn.btn-primary.float-xs-right.btnNext(href='/')
