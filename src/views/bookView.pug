@@ -52,7 +52,7 @@ header.navbar.navbar-bright.fixed-top.navbar-expand-md(role='banner')
             br
             .col-lg-2.col-md-3.text-center
               a.story-title(href='#')
-                img.rounded-circle(alt src='http://api.randomuser.me/portraits/thumb/men/58.jpg' style='width:100px;height:100px')
+                img(alt src= book.details.image_url style='width:100px;height:100px')
             .col-lg-10.col-md-9
               h3= book.title
               .row
@@ -62,6 +62,7 @@ header.navbar.navbar-bright.fixed-top.navbar-expand-md(role='banner')
                   h4
                 .col-3
               br
+              p !{book.details.description}
               br
           hr
           // /stories
