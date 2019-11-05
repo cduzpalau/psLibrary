@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    meta(http-equiv='content-type' content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title= title
+    meta(name='generator' content='Bootply')
+    meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css' rel='stylesheet')
+    link(href='/css/styles.css' rel='stylesheet')
+  body
+    block content
+    hr
+    .container#footer
+      .row
+        .col.col-sm-12
+          h1 Follow Us
+          .btn-group
+            a.btn.btn-twitter.btn-lg(href='#')
+              i.icon-twitter.icon-large
+              |  Twitter
+            a.btn.btn-facebook.btn-lg(href='#')
+              i.icon-facebook.icon-large
+              |  Facebook
+            a.btn.btn-google-plus.btn-lg(href='#')
+              i.icon-google-plus.icon-large
+              |  Google+
+    hr
+    hr
+    footer
+      .container
+        .row
+          .col-sm-6
+            ul.list-inline
+              li
+                i.icon-facebook.icon-2x
+              li
+                i.icon-twitter.icon-2x
+              li
+                i.icon-google-plus.icon-2x
+              li
+                i.icon-pinterest.icon-2x
+          .col-sm-6
+            p.float-xs-right
+              | Built with 
+              i.icon-heart-empty
+              |  at 
+              a(href='http://www.bootply.com') Bootply
+    //  script references 
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
